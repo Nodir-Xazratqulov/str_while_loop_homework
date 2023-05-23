@@ -7,3 +7,14 @@ def main(s):
     Returns:
         int: return answer
     """
+
+    a='aeiou'
+    i=0
+    k=0
+    while i<len(s):
+        if s[i].isalpha() and s[i] not in a:
+            k+=1
+        i+=1
+    return k
+print(main('Codeschoolsuz'))
+
